@@ -29,7 +29,7 @@ const ProductList: React.FC = () => {
     <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
         
       {products.map(product => (
-        <div key={product.id} className="border p-4 flex flex-col">
+        <div key={product.id} className="border p-5 flex flex-col">
           <img src={product.image} alt={product.title} className="w-full h-48 object-cover mb-2" />
           <h3 className="text-lg font-bold">{product.title}</h3>
           <p className="text-gray-800">${product.price}</p>
